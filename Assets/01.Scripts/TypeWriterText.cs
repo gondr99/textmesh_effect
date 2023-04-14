@@ -29,6 +29,7 @@ public class TypeWriterText : MonoBehaviour
     public void StartEffect(string text)
     {
         _tmpText.SetText(text);
+        _tmpText.color = _endColor;
         _tmpText.ForceMeshUpdate();
         _tmpText.maxVisibleCharacters = 0;
 
